@@ -242,7 +242,7 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
     <img id="header-avatar" src="https://minotar.net/avatar/Steve/32" alt="avatar"/>
     <span id="header-ign">Set IGN</span>
   </div>
-  <a href="https://discord.gg/infamoussmp" target="_blank" class="header-btn discord-hide">
+  <a href="https://discord.gg/DzHfKWrZd4" target="_blank" class="header-btn discord-hide">
     <svg class="discord-icon" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
     Discord
   </a>
@@ -292,7 +292,7 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
 
 <!-- PAGE: RANKS -->
 <div class="page" id="page-ranks">
-  <span class="section-badge">🏆 LIFETIME RANKS</span>
+  <span class="section-badge">🏆 SEASONAL RANKS</span>
   <h2 class="section-title">Premium Ranks</h2>
   <p class="section-sub">Upgrade your gameplay with exclusive perks and commands. All ranks are permanent with lifetime access.</p>
   <div class="grid-3" id="ranks-grid"></div>
@@ -300,7 +300,7 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
 
 <!-- PAGE: PRIME -->
 <div class="page" id="page-prime">
-  <span class="section-badge">👑 MONTHLY SUBSCRIPTION</span>
+  <span class="section-badge">👑 MONTHLY </span>
   <h2 class="section-title">Prime Ranks</h2>
   <p class="section-sub">Monthly subscription ranks with exclusive perks. Renew every month to keep your benefits active.</p>
   <div class="grid-4" id="prime-grid"></div>
@@ -377,7 +377,7 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
       <button class="paid-btn" onclick="confirmPayment()" id="paid-btn">✅ I Have Paid</button>
       <span class="cancel-link" onclick="closeCheckout()">Cancel</span>
     </div>
-    <div class="success-msg" id="success-msg">🎉 Payment Confirmed!<br><span style="font-size:14px;color:var(--muted);font-weight:400">Order sent to admin via Discord.<br>You'll receive your items shortly!</span></div>
+    <div class="success-msg" id="success-msg">🎉 Payment Confirmed!<br><span style="font-size:14px;color:var(--muted);font-weight:400">Order sent to admin via Discord.<br>Create a Ticket Under Store Category of Infamous SMP and Upload Payment Proof</span></div>
   </div>
 </div>
 
@@ -401,9 +401,9 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
 // ========================================================
 // CONFIG — Replace with your actual values
 // ========================================================
-const UPI_ID = "YOUR_UPI_ID@gpay";          // ← Apna GPay UPI ID
+const UPI_ID = "";          
 const UPI_NAME = "InfamousSMP";
-const DISCORD_WEBHOOK = "YOUR_DISCORD_WEBHOOK_URL"; // ← Discord webhook
+const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1481655672666853618/pg5O_vGSBlxwQvmuq_QRLZWTviRZDYN96R3U7uFd5yEhWaGWVUqE5yIUe8t8rmdyOc4H"; 
 
 // ========================================================
 // DATA
@@ -417,19 +417,19 @@ const FEATURED = [
 ];
 
 const RANKS = [
-  {id:"r-warrior",name:"Warrior",image:IMG+"rank-warrior.png",priceINR:49,priceUSD:"0.59",perks:["Access to /fly","Colored chat","2 /sethome"],border:""},
-  {id:"r-knight",name:"Knight",image:IMG+"rank-knight.png",priceINR:79,priceUSD:"0.95",perks:["All Warrior perks","/nick command","3 /sethome"],border:"blue"},
-  {id:"r-elite",name:"Elite",image:IMG+"rank-elite.png",priceINR:99,priceUSD:"1.19",perks:["All Knight perks","/ec command","4 /sethome"],border:""},
-  {id:"r-champion",name:"Champion",image:IMG+"rank-champion.png",priceINR:159,priceUSD:"1.92",perks:["All Elite perks","/heal command","5 /sethome","Special kit"],border:"gold",popular:true},
-  {id:"r-legend",name:"Legend",image:IMG+"rank-legend.png",priceINR:199,priceUSD:"2.39",perks:["All Champion perks","Custom tag","/feed command"],border:"orange"},
-  {id:"r-ace",name:"Ace",image:IMG+"rank-ace.png",priceINR:299,priceUSD:"3.59",perks:["All Legend perks","Priority support","Exclusive cosmetics","7 /sethome"],border:"red"},
+  {id:"r-warrior",name:"Warrior",image:IMG+"rank-warrior.png",priceINR:49,priceUSD:"0.59",perks:["/fly command","/back command","2 home locations","100 coins","50k in-game money","Warrior kit"],border:""},
+  {id:"r-knight",name:"Elite",image:IMG+"rank-elite.png",priceINR:99,priceUSD:"0.95",perks:["/fly command","/back command","/anvil command","4 home locations","300 coins","100k in-game money","Elite kit"],border:"blue"},
+  {id:"r-elite",name:"Champion",image:IMG+"rank-champion.png",priceINR:99,priceUSD:"1.19",perks:["/fly, /back, /craft, /anvil","Chat colour customization","6 home locations","500 coins","150k in-game money","Champion kit"],border:""},
+  {id:"r-champion",name:"Deadliest",image:IMG+"rank-deadliest.png",priceINR:159,priceUSD:"1.92",perks:["/fly, /back, /craft, /anvil","Chat colour customization","8 home locations","700 coins","200k in-game money","Deadliest kit"],border:"gold",popular:true},
+  {id:"r-legend",name:"Bss",image:IMG+"rank-boss.png",priceINR:199,priceUSD:"2.39",perks:["/fly, /back, /craft, /anvil","Custom chat colour","10 home locations","999 coins","300k in-game money","Boss kit","Early access to events"],border:"orange"},
+  {id:"r-ace",name:"Ace",image:IMG+"rank-ace.png",priceINR:299,priceUSD:"3.59",perks:["/fly, /back, /craft, /anvil","Custom chat colour","12 home locations","1199 coins","500k in-game money","Ace ultimate kit","Early access to events"],border:"red"},
 ];
 
 const PRIME = [
-  {id:"p-vip",name:"VIP",image:IMG+"prime-vip.png",priceINR:49,priceUSD:"0.59",perks:["Monthly kit","Chat badge"],border:""},
-  {id:"p-mvp",name:"MVP",image:IMG+"prime-mvp.png",priceINR:99,priceUSD:"1.19",perks:["All VIP perks","Extra rewards"],border:"blue"},
-  {id:"p-mvpplus",name:"MVP+",image:IMG+"prime-mvpplus.png",priceINR:249,priceUSD:"3.00",perks:["All MVP perks","Custom prefix","Priority queue"],border:"gold"},
-  {id:"p-mvpplusplus",name:"MVP++",image:IMG+"prime-mvpplusplus.png",priceINR:499,priceUSD:"5.99",perks:["All MVP+ perks","Exclusive cosmetics","Special effects"],border:"orange"},
+  {id:"p-vip",name:"MVP",image:IMG+"prime-mvp.png",priceINR:149,priceUSD:"1.61",perks:["⚡ /fly command,⚡ /anvil, /craft, /echest","🏠 5 home locations","💰 400 coins","💵 300k money","🎁 Special MVP kit"],border:""},
+  {id:"p-mvp",name:"MVP+",image:IMG+"prime-mvpplus.png",priceINR:199,priceUSD:"2.16",perks:["⚡ /fly, /anvil, /craft, /echest","🏠 10 home locations","💰 600 coins","💵 600k money","🎁 Special MVP+ kit","👑 Priority support"],border:"blue"},
+  {id:"p-mvpplus",name:"VIP",image:IMG+"prime-vip.png",priceINR:249,priceUSD:"2.70",perks:["⚡ /fly, /anvil, /craft, /echest","🏠 15 home locations","💰 800 coins","💵 750k money","🎁 Special VIP kit","✨ Exclusive VIP lounge"],border:"gold"},
+  {id:"p-mvpplusplus",name:"VIP+",image:IMG+"prime-vipplus.png",priceINR:399,priceUSD:"4.32 ",perks:["⚡ /fly, /anvil, /craft, /echest","🏠 ∞ Unlimited homes","💰 1000 coins","💵 1M money","🎁 Customizable kit","🚀 Early access to gamemodes","✨ Exclusive VIP+ cosmetics"],border:"orange"},
 ];
 
 const KEYS = [
@@ -440,19 +440,19 @@ const KEYS = [
 ];
 
 const COINS = [
-  {id:"c-500",name:"500 Coins",coins:"500",image:IMG+"coins-500.png",priceINR:29,priceUSD:"0.35",border:"",bonus:""},
-  {id:"c-1500",name:"1,500 Coins",coins:"1,500",image:IMG+"coins-1500.png",priceINR:79,priceUSD:"0.95",border:"",bonus:""},
-  {id:"c-5000",name:"5,000 Coins",coins:"5,000",image:IMG+"coins-5000.png",priceINR:199,priceUSD:"2.39",border:"green",bonus:"+500 Bonus"},
-  {id:"c-15000",name:"15,000 Coins",coins:"15,000",image:IMG+"coins-15000.png",priceINR:499,priceUSD:"5.99",border:"gold",bonus:"+3,000 Bonus"},
+  {id:"c-500",name:"500 Coins",coins:"500",image:IMG+"coins-starter.png",priceINR:49,priceUSD:"0.53",border:"",bonus:""},
+  {id:"c-1500",name:"1,500 Coins",coins:"1,500",image:IMG+"coins-basic.png",priceINR:99,priceUSD:"1.07",border:"",bonus:""},
+  {id:"c-5000",name:"3,000 Coins",coins:"3,000",image:IMG+"coins-premium.png",priceINR:199,priceUSD:"2.39",border:"green",bonus:"+300 Bonus"},
+  {id:"c-15000",name:"5,000 Coins",coins:"5,000",image:IMG+"coins-ultimate.png",priceINR:299,priceUSD:"3.24",border:"gold",bonus:"+1,000 Bonus"},
 ];
 
 const TAGS = [
-  {id:"t-og",name:"[OG]",preview:"[OG] Player",image:IMG+"tag-og.png",priceINR:29,priceUSD:"0.35",border:""},
-  {id:"t-goat",name:"[GOAT]",preview:"[GOAT] Player",image:IMG+"tag-goat.png",priceINR:39,priceUSD:"0.47",border:"gold"},
-  {id:"t-toxic",name:"[TOXIC]",preview:"[TOXIC] Player",image:IMG+"tag-toxic.png",priceINR:29,priceUSD:"0.35",border:"green"},
-  {id:"t-ez",name:"[EZ]",preview:"[EZ] Player",image:IMG+"tag-ez.png",priceINR:19,priceUSD:"0.23",border:""},
-  {id:"t-pro",name:"[PRO]",preview:"[PRO] Player",image:IMG+"tag-pro.png",priceINR:29,priceUSD:"0.35",border:"blue"},
-  {id:"t-king",name:"[KING]",preview:"[KING] Player",image:IMG+"tag-king.png",priceINR:49,priceUSD:"0.59",border:"gold"},
+  {id:"t-og",name:"[OG]",preview:"[OG] Player",image:IMG+"tag-og.png",priceINR:29,priceUSD:"0.31",border:""},
+  {id:"t-goat",name:"[Pro]",preview:"[Pro] Player",image:IMG+"tag-pro.png",priceINR:59,priceUSD:"0.64",border:"gold"},
+  {id:"t-toxic",name:"[Legend]",preview:"[Legend] Player",image:IMG+"tag-legend.png",priceINR:99,priceUSD:"1.07",border:"green"},
+  {id:"t-ez",name:"[GOAT]",preview:"[GOAT] Player",image:IMG+"tag-goat.png",priceINR:129,priceUSD:"1.40",border:""},
+  {id:"t-pro",name:"[Rich]",preview:"[Rich] Player",image:IMG+"tag-rich.png",priceINR:149,priceUSD:"1.61",border:"blue"},
+  {id:"t-king",name:"[Custom]",preview:"[Custom] Player",image:IMG+"tag-custom.png",priceINR:199,priceUSD:"2.15",border:"gold"},
 ];
 
 // ========================================================
@@ -563,7 +563,7 @@ function openCheckout() {
   warn.style.display = playerIGN ? 'none' : 'block';
 
   const upiStr = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(UPI_NAME)}&am=${totalINR}&cu=INR&tn=${encodeURIComponent('InfamousSMP - ' + (playerIGN || 'Player'))}`;
-  document.getElementById('qr-img').src = `file:///C:/Users/DELL/Desktop/WhatsApp_Image_2026-03-13_at_3.22.07_PM.webp{encodeURIComponent(upiStr)}&bgcolor=ffffff&color=000000`;
+  document.getElementById('qr-img').src = `https://postimg.cc/nsbCbcD1?size=200x200&data=${encodeURIComponent(upiStr)}&bgcolor=ffffff&color=000000`;
 
   let html = '<h4>📋 Order Summary</h4>';
   cart.forEach(i => { html += `<div class="order-line"><span>${i.name}</span><span>₹${i.priceINR}</span></div>`; });
